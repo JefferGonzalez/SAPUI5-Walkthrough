@@ -1,0 +1,13 @@
+html[dir='ltr'] .app .btn-custom.sapMBtn {
+  margin-right: 0.125rem;
+}
+
+html[dir='rtl'] .app .btn-custom.sapMBtn {
+  margin-left: 0.125rem;
+}
+
+.app .txt-custom {
+  display: inline-block;
+  font-weight: bold;
+  color: #22f209;
+}

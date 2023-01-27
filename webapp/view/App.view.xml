@@ -1,0 +1,31 @@
+<mvc:View 
+	controllerName="sap.ui.webapp.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true"
+>
+	<App class="app">
+		<pages>
+			<Page title="{i18n>homePageTitle}">
+				<content>
+						<mvc:XMLView viewName="sap.ui.webapp.view.HelloPanel" />
+						<mvc:XMLView viewName="sap.ui.webapp.view.InvoiceList"/>
+						<!-- <List
+							id="list"
+							items="{characters>/}">
+							<headerToolbar>
+								<Toolbar>
+									<Title text="Prueba"/>
+									<ToolbarSpacer/>
+									<SearchField width="50%" search=".onFilter"/>
+								</Toolbar>
+							</headerToolbar>
+							<items>
+								<ObjectListItem title="{characters>name}: {characters>status}" />
+							</items>
+						</List> -->
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,35 @@
+{
+	"name": "app",
+	"version": "0.0.1",
+	"private": true,
+	"sapuxLayer": "CUSTOMER_BASE",
+	"description": "",
+	"keywords": [
+		"ui5",
+		"openui5",
+		"sapui5"
+	],
+	"main": "webapp/index.html",
+	"scripts": {
+		"start": "fiori run --open \"index.html\"",
+		"test": "fiori run --open \"test/unit/unitTest.qunit.html\"",
+		"start-variants-management": "fiori run --open \"preview.html?sap-ui-xx-viewCache=false&fiori-tools-rta-mode=true&sap-ui-rta-skip-flex-validation=true#preview-app\"",
+		"build": "ui5 build -a --clean-dest --include-task=generateCachebusterInfo",
+		"deploy": "fiori verify",
+		"deploy-config": "fiori add deploy-config"
+	},
+	"devDependencies": {
+		"@sap/ux-ui5-tooling": "1",
+		"@ui5/cli": "^2.14.1",
+		"rimraf": "3.0.2",
+		"standard": "17.0.0"
+	},
+	"ui5": {
+		"dependencies": [
+			"@sap/ux-ui5-tooling"
+		]
+	},
+	"eslintConfig": {
+		"extends": "./node_modules/standard/eslintrc.json"
+	}
+}
