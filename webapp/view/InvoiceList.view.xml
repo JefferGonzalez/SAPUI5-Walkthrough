@@ -1,8 +1,7 @@
 <mvc:View
   controllerName="sap.ui.webapp.controller.InvoiceList" 
   xmlns="sap.m" 
-  xmlns:mvc="sap.ui.core.mvc"
->
+  xmlns:mvc="sap.ui.core.mvc">
     <List
       id="invoiceList"
       headerText="{i18n>invoiceListTitle}" 
@@ -14,8 +13,7 @@
           path: 'ShipperName',
           group: true
         }
-      }"
-    >
+      }">
       <headerToolbar>
         <Toolbar>
           <Title text="{i18n>invoiceListTitle}"/>
@@ -38,7 +36,8 @@
           }"
           numberUnit="{view>/currency}"
           numberState="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success'}"
-        >
+          type="Navigation"
+          press=".onPress">
           <firstStatus>
             <ObjectStatus text="{
                 path: 'invoice>Status',
