@@ -11,3 +11,10 @@ html[dir='rtl'] .app .btn-custom.sapMBtn {
   font-weight: bold;
   color: #22f209;
 }
+
+.app-product-rating {
+  padding: 0.75rem;
+}
+.app-product-rating .sapMRI {
+  vertical-align: initial;
+}
